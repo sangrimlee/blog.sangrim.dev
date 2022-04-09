@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'sangrimlee.github.io',
-  description: 'sangrimlee.github.io',
-  siteUrl: 'https://sangrimlee.github.io',
+  title: 'blog.sangrim.dev',
+  description: 'blog.sangrim.dev',
+  siteUrl: 'https://blog.sangrim.dev',
   author: 'sangrimlee',
   icon: 'contents/images/favicon.png',
   keywords: ['blog'],
