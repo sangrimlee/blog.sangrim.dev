@@ -1,0 +1,4 @@
+- utterances:
+    repository: sangrimlee/blog.sangrim.dev
+    label: Comment
+  countOfInitialPost: 10

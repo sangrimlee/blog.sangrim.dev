@@ -1,0 +1,19 @@
+- name: '이상림 (Sang Rim Lee)'
+  job: 'Frontend Developer'
+  short: 'Interested in React, JavaScript, TypeScript, Testing, Productivity'
+  introduction: |-
+    프론트엔드 개발자를 꿈꾸는 이상림입니다.
+  profileImage: ../images/profile.png
+  skills:
+    - name: Javascript (자바스크립트)
+      image: ../images/skills/js.png
+    - name: TypeScript (타입스크립트)
+      image: ../images/skills/ts.png
+    - name: React (리액트)
+      image: ../images/skills/react.png
+  social:
+    github: 'sangrimlee'
+    mail: 'contact@sangrim.dev'
+    twitter: ''
+    facebook: ''
+    linkedin: 'sangrim-lee-a1a8bb230'

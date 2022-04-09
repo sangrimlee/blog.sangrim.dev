@@ -1,0 +1,8 @@
+.eslintrc.js
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-metadata.js
+graphql.config.js
+postcss.config.js
+tailwind.config.js

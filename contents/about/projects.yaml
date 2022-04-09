@@ -1,0 +1,5 @@
+- name: 스마트 옷장(Smart Wardrobe)
+  description: 저희 Smart Wardrobe(스마트 옷장) 프로젝트는 인공지능을 활용하여, 날씨, 사용자가 선택한 스타일, 그리고 사용자가 가지고 있는 옷을 기반으로 사용자에게 어떤 스타일로 옷을 입을 지 추천해주는 어플리케이션입니다.
+  url: https://docs.google.com/presentation/d/137vkLEGdurOXWRYOGO_0ogCE5-Jh0snGqfwKTskjkek/edit?usp=sharing
+  repository: https://github.com/sangrimlee/react-native-smart-wardrobe
+  thumbnail: ../images/thumbnails/smart-wardrobe.png
