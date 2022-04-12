@@ -11,6 +11,7 @@ export default function SocialButton({ social, username }: SocialButtonProps) {
   return (
     <a
       href={SOCIAL_INFO[social].url(username)}
+      aria-label={`${social}로 이동`}
       target="_blank"
       style={{
         backgroundColor: SOCIAL_INFO[social].color,

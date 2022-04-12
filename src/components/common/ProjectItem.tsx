@@ -26,12 +26,22 @@ export default function ProjectItem({
         </div>
         <ul className="project-link-list">
           <li>
-            <a href={repository} className="project-link">
+            <a
+              href={url}
+              className="project-link"
+              aria-label="프로젝트 페이지로 이동"
+              target="_blank"
+            >
               <SVGIcon icon="LinkIcon" size={32} />
             </a>
           </li>
           <li>
-            <a href={url} className="project-link">
+            <a
+              href={repository}
+              className="project-link"
+              aria-label="Github로 이동"
+              target="_blank"
+            >
               <SVGIcon icon="GithubIcon" size={32} />
             </a>
           </li>
