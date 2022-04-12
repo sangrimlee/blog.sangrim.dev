@@ -22,7 +22,7 @@ export default function Contact({ social }: ContactProps) {
         {socialInfo.map(
           ([social, username]) =>
             username && (
-              <li key={social} className=" -mr-3 last:mr-0">
+              <li key={social} className="-mr-3 last:mr-0">
                 <SocialButton social={social} username={username} />
               </li>
             ),
