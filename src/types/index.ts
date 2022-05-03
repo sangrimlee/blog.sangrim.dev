@@ -79,9 +79,15 @@ export interface TagData {
   totalCount: number;
 }
 
+export interface Heading {
+  id: string;
+  depth: number;
+  value: string;
+}
+
 export interface PostTemplateData extends PostData {
   html: string;
-  tableOfContents: string;
+  headings: Heading[];
 }
 
 export interface PostNavigationData {
