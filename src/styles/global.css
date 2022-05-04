@@ -170,7 +170,7 @@
     @apply mb-4 text-3xl md:text-4xl font-bold tracking-tight;
   }
   .post-body {
-    @apply prose dark:prose-invert prose-neutral max-w-none prose-headings:scroll-mt-24 prose-headings:mt-8;
+    @apply prose dark:prose-invert prose-neutral max-w-none;
   }
   .post-footer {
     @apply mt-10 mb-12;
@@ -215,16 +215,16 @@
     @apply absolute left-full;
   }
   .toc > ul {
-    @apply fixed top-28 w-48 ml-16 border-l-2 border-custom-200 dark:border-custom-700 px-4 pt-2 pb-1;
+    @apply fixed top-28 w-48 ml-16 border-l-2 border-custom-200 dark:border-custom-700 pl-4 pr-2 pb-1;
   }
-  .toc > ul ul {
-    @apply ml-3;
+  .toc-item {
+    @apply block text-sm text-secondary hover:text transition-all;
   }
-  .toc > ul > li {
-    @apply mb-3 last:mb-0;
+  .toc-item + .toc-item {
+    @apply mt-1;
   }
-  .toc a {
-    @apply mb-1 text-sm text-secondary hover:text line-clamp-1 transition-colors;
+  .toc-item.active {
+    @apply text dark:text-white scale-105;
   }
 
   /* ProjectItem */

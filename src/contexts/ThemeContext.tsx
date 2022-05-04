@@ -28,7 +28,7 @@ export const ThemeContext = createContext(defaultState);
 export const useThemeContext = () => useContext(ThemeContext);
 
 export default function ThemeProvider({ children }: Props) {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>(getThemeStorage() ?? getOSTheme());
 
   const toggleTheme = useCallback(() => {
     const toggledTheme = theme === 'light' ? 'dark' : 'light';

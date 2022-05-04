@@ -27,7 +27,7 @@ export default function PostTemplate({
   const {
     html,
     fields: { slug },
-    tableOfContents,
+    headings,
     frontmatter: {
       title,
       date,
@@ -51,7 +51,7 @@ export default function PostTemplate({
         thumbnail={publicURL}
       />
       <PostHeader title={title} date={date} gatsbyImageData={gatsbyImageData} />
-      <TableOfContents tableOfContents={tableOfContents} />
+      <TableOfContents headings={headings} />
       <PostBody html={html} />
       <PostFooter tags={tags} />
       <Bio />
@@ -66,7 +66,11 @@ export const queryPostBySlug = graphql`
     postTemplate: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
-      tableOfContents(maxDepth: 3)
+      headings {
+        id
+        depth
+        value
+      }
       fields {
         slug
       }
