@@ -188,10 +188,10 @@
     @apply w-full h-16 px-4 flex items-center rounded bg-custom-200 dark:bg-custom-700 text-secondary;
   }
   .post-nav-prev {
-    @apply flex-row justify-start;
+    @apply flex-row;
   }
   .post-nav-next {
-    @apply flex-row-reverse justify-end;
+    @apply flex-row-reverse;
   }
   .post-nav-icon {
     @apply flex items-center justify-center;
