@@ -3,7 +3,7 @@ date: '2022-04-01'
 title: '세그먼트 트리 (Segment Tree)'
 tags: ['알고리즘', '자료구조', 'CodingTest']
 description: '세그먼트 트리 (Segment Tree)는 배열의 부분 합을 구할 때 사용하는 개념이며 배열의 값이 지속적으로 바뀌는 경우, 트리로 구현하여 해결하는 방법'
-thumbnail: './images/segment-tree-2.png'
+thumbnail: './images/thumbnail.png'
 ---
 
 ## 세그먼트 트리 (Segment Tree)
