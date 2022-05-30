@@ -19,13 +19,13 @@ export default function SkillStacks({ skills }: SkillStacksProps) {
             },
           }) => (
             <li
-              className="rounded-full overflow-hidden mr-4 mb-4 last:mr-0"
+              className="mr-4 mb-4 overflow-hidden rounded-full last:mr-0"
               key={name}
             >
               <GatsbyImage
                 image={gatsbyImageData}
                 alt={name}
-                className="h-32 w-32 object-contain clip-circle"
+                className="clip-circle h-32 w-32 object-contain"
               />
             </li>
           ),

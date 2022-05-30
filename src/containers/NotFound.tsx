@@ -7,7 +7,7 @@ export default function NotFound() {
   const notFoundImage = useNotFoundImageQuery();
   return (
     <div className="not-found-wrap">
-      <div className="max-w-xs md:max-w-lg mx-auto">
+      <div className="mx-auto max-w-xs md:max-w-lg">
         <GatsbyImage image={notFoundImage} alt="404" />
       </div>
       <h2>찾으시는 페이지가 없습니다.</h2>

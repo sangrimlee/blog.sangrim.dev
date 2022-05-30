@@ -9,7 +9,7 @@ export default function Introduction({ introduction }: IntroductionProps) {
   return (
     <section>
       <h2 className="title">소개</h2>
-      <p className="text-base text-secondary break-words">
+      <p className="text-secondary break-words text-base">
         {lines.map((line, index) => (
           <React.Fragment key={index}>
             {line} {index < lines.length - 1 && <br />}

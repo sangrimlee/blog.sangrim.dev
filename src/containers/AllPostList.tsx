@@ -5,7 +5,7 @@ import TopTagList from './TopTagList';
 export default function AllPostList() {
   return (
     <div className="flex flex-col xl:flex-row-reverse">
-      <div className="xl:w-1/4 mb-10 xl:mb-0">
+      <div className="mb-10 xl:mb-0 xl:w-1/4">
         <TopTagList />
       </div>
       <div className="xl:w-3/4 xl:pr-10">

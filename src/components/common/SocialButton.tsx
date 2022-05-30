@@ -16,7 +16,7 @@ export default function SocialButton({ social, username }: SocialButtonProps) {
       style={{
         backgroundColor: SOCIAL_INFO[social].color,
       }}
-      className="w-12 h-12 rounded-full box-content inline-flex items-center justify-center text-white border-2 border-custom-50 dark:border-custom-800"
+      className="box-content inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-custom-50 text-white dark:border-custom-800"
     >
       <SVGIcon icon={SOCIAL_INFO[social].icon} size={24} />
     </a>
