@@ -10,7 +10,7 @@ interface ProfileProps {
 export default function Profile({ job, name, profileImage }: ProfileProps) {
   return (
     <div>
-      <span className="block mb-1 text-lg font-light">{job}</span>
+      <span className="mb-1 block text-lg font-light">{job}</span>
       <h1 className="mb-4 text-2xl font-bold">{name}</h1>
       <GatsbyImage image={profileImage} alt="프로필 이미지" />
     </div>
