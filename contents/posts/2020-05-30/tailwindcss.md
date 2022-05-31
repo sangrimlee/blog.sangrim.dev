@@ -1,6 +1,6 @@
 ---
 date: '2022-05-30'
-title: 'Tailwind CSS 잘 사용하기'
+title: 'Tailwind CSS 사용기'
 tags: ['TailwindCSS', 'React', 'TypeSCript']
 description: '최근 아주 핫한🔥 Tailwind CSS란 것을 사용해보고, 블로그에 적용하면서 어떤 어려움이 있었고, 어떤 식으로 해결하고 사용하였는지 공유하고자합니다.'
 thumbnail: './images/thumbnail.png'
@@ -16,7 +16,7 @@ Tailwind CSS 공식문서에 잘 나와있듯, Tailwind CSS는 Utility First 컨
 
 Tailwind CSS의 장점과 단점 기본적인 사용법에 대해서는 [워니님의 블로그](https://wonny.space/writing/dev/hello-tailwind-css)에 잘 나와있기에 참고하시면 처음 시작하실 때 좋을 것 같습니다.
 
-## Tailwind CSS 잘 사용하기
+## Tailwind CSS 사용기
 
 제가 이번에 이야기하고 싶은 것은 Tailwind CSS를 사용하면서, 내가 느꼈던 문제점을 공유하고, 나는 어떻게 해결하였는지 같이 이야기해보고자 합니다.
 
