@@ -19,6 +19,7 @@ const profileQuery = graphql`
       short
       introduction
       profileImage {
+        publicURL
         childImageSharp {
           gatsbyImageData(
             height: 192

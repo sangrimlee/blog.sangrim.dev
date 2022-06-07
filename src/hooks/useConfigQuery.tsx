@@ -18,6 +18,8 @@ const configQuery = graphql`
         label
       }
       countOfInitialPost
+      facebookAppId
+      twitterId
     }
   }
 `;

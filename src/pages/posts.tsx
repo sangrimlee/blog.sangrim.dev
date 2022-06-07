@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from 'components/layouts/Layout';
-import SiteHead from 'containers/SiteHead';
 import AllPostList from 'containers/AllPostList';
+import Seo from 'containers/Seo';
 
 export default function PostPage() {
   return (
     <Layout>
-      <SiteHead />
+      <Seo title="포스트" slug="/posts" />
       <AllPostList />
     </Layout>
   );

@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { PostTemplateData, PostPageContextData } from 'types';
 import Bio from 'containers/Bio';
-import PostHead from 'containers/PostHead';
 import Utterances from 'containers/Utterances';
+import Seo from 'containers/Seo';
 import Layout from 'components/layouts/Layout';
 import {
   PostHeader,
@@ -43,12 +43,13 @@ export default function PostTemplate({
 
   return (
     <Layout size="md">
-      <PostHead
+      <Seo
+        type="article"
         title={title}
         description={description}
         slug={slug}
-        tags={tags}
-        thumbnail={publicURL}
+        keywords={tags}
+        image={publicURL}
       />
       <PostHeader title={title} date={date} gatsbyImageData={gatsbyImageData} />
       <TableOfContents headings={headings} />

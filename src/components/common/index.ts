@@ -1,4 +1,3 @@
-export { default as Head } from './Head';
 export { default as SVGIcon } from './SVGIcon';
 export { default as Contact } from './Contact';
 export { default as SkillStacks } from './SkillStacks';

@@ -11,6 +11,8 @@ export interface ConfigData {
     label: string;
   };
   countOfInitialPost: number;
+  facebookAppId: string;
+  twitterId: string;
 }
 
 export interface SiteMetadata {
@@ -47,6 +49,7 @@ export interface ProfileData {
   social: SocialData;
   skills: SkillData[];
   profileImage: {
+    publicURL: string;
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData;
     };

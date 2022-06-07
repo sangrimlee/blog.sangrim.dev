@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from 'components/layouts/Layout';
-import SiteHead from 'containers/SiteHead';
 import Bio from 'containers/Bio';
 import RecentPostList from 'containers/RecentPostList';
+import Seo from 'containers/Seo';
 
 export default function IndexPage() {
   return (
     <Layout size="md">
-      <SiteHead />
+      <Seo title="홈" />
       <Bio />
       <RecentPostList />
     </Layout>

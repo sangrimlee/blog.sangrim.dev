@@ -2,3 +2,5 @@
     repository: sangrimlee/blog.sangrim.dev
     label: comment
   countOfInitialPost: 10
+  facebookAppId: 1245340689544265
+  twitterId: '@sangrimdev'
