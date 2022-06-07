@@ -5,4 +5,5 @@ module.exports = {
   author: 'sangrimlee',
   icon: 'contents/images/favicon.png',
   keywords: ['블로그', '프론트엔드', 'Blog', 'FrontEnd'],
+  ga: 'G-7S53RR8BK3',
 };

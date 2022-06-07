@@ -121,5 +121,14 @@ module.exports = {
         stripQueryString: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: metadata.ga,
+        head: true,
+        anonymize: true,
+        enableWebVitalsTracking: true,
+      },
+    },
   ],
 };
