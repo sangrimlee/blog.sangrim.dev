@@ -24,9 +24,7 @@ debounce는 위에 설명한 것처럼, 일정시간 내에 발생한 많은 이
 `setTimeout`을 사용해서 일정 시간(`wait`) 이후에 쌓이게 하여서, 쌓이기 전의 Callback 함수가 있다면,
 취소하고(`clearTimeout`) 새로운 `setTimeout(Callback)`의 호출을 통해서 다시 일정시간 이후에 쌓이게 함으로써 구현합니다.
 
-<div style="width:100%;height:0;padding-bottom:106%;position:relative;">
-<iframe src="https://giphy.com/embed/825WDqKci7OLrII2CQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-</div>
+![debounce animation](./images/debounce.gif)
 
 위의 애니메이션을 보면 연속적으로 실행된 이벤트 모두 실행되는 것이 아니라 일정시간 이후에 실행되는 것을 볼 수 있습니다.
 이를 코드로 구현하면 아래와 같습니다.
@@ -59,9 +57,7 @@ function debounce(callback, wait) {
 
 throttle은 debounce와 다르게 일정시간 동안 하나의 이벤트만 실행합니다.
 
-<div style="width:100%;height:0;padding-bottom:106%;position:relative;">
-<iframe src="https://giphy.com/embed/PP9BJTHkRtBedLp8EI" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-</div>
+![throttle animation](./images/throttle.gif)
 
 위의 애니메이션을 보면 연속적으로 실행된 이벤트 모두 실행되는 것이 아니라 일정시간동안 하나의 이벤트만 실행됩니다.
 이를 코드로 구현하면 아래와 같습니다.

@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
@@ -119,6 +120,15 @@ module.exports = {
       options: {
         siteUrl: metadata.siteUrl,
         stripQueryString: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: metadata.ga,
+        head: true,
+        anonymize: true,
+        enableWebVitalsTracking: true,
       },
     },
   ],
