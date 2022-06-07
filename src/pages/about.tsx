@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from 'components/layouts/Layout';
-import SiteHead from 'containers/SiteHead';
 import About from 'containers/About';
+import Seo from 'containers/Seo';
 
 export default function AboutPage() {
   return (
     <Layout>
-      <SiteHead />
+      <Seo title="소개" slug="/about" />
       <About />
     </Layout>
   );

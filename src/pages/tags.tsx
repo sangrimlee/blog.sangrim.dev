@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from 'components/layouts/Layout';
-import SiteHead from 'containers/SiteHead';
 import TagList from 'containers/TagList';
+import Seo from 'containers/Seo';
 
 export default function TagsPage() {
   return (
     <Layout>
-      <SiteHead />
+      <Seo title="태그" slug="/tags" />
       <TagList />
     </Layout>
   );

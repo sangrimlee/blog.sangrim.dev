@@ -15,8 +15,11 @@ const configQuery = graphql`
     config: configYaml {
       utterances {
         repository
+        label
       }
       countOfInitialPost
+      facebookAppId
+      twitterId
     }
   }
 `;

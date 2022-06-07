@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from 'components/layouts/Layout';
 import InfinitePostList from 'containers/InfinitePostList';
-import SiteHead from 'containers/SiteHead';
+import Seo from 'containers/Seo';
 
 interface PostByTagTemplateProps {
   pageContext: {
@@ -16,9 +16,9 @@ export default function PostByTagTemplate({
 
   return (
     <Layout size="md">
-      <SiteHead />
+      <Seo title={`#${tag}`} slug={`/tags/${tag}`} />
       <h1 className="title">
-        Tag / <span className="highlight">{tag}</span>
+        Tag / <span className="highlight">#{tag}</span>
       </h1>
       <InfinitePostList selectedTag={tag} />
     </Layout>
