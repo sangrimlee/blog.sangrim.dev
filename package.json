@@ -41,7 +41,6 @@
     "gatsby-remark-katex": "^6.15.0",
     "gatsby-remark-prismjs": "^6.15.0",
     "gatsby-remark-smartypants": "^5.15.0",
-    "gatsby-remark-stackblitz": "^0.1.0",
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-transformer-remark": "^5.15.0",
     "gatsby-transformer-sharp": "^4.15.0",
