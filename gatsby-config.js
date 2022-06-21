@@ -88,12 +88,6 @@ module.exports = {
               strict: 'ignore',
             },
           },
-          {
-            resolve: 'gatsby-remark-stackblitz',
-            options: {
-              height: 640,
-            },
-          },
         ],
       },
     },

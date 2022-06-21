@@ -1,7 +1,7 @@
 ---
 date: '2022-05-30'
 title: 'Tailwind CSS 사용기'
-tags: ['TailwindCSS', 'React', 'TypeSCript']
+tags: ['TailwindCSS', 'React', 'TypeScript']
 description: '최근 아주 핫한🔥 Tailwind CSS란 것을 사용해보고, 블로그에 적용하면서 어떤 어려움이 있었고, 어떤 식으로 해결하고 사용하였는지 공유하고자합니다.'
 thumbnail: './images/thumbnail.png'
 ---
@@ -32,7 +32,7 @@ export default function Text({ content, contentType }: TextProps) {
           ${
             contentType === 'title'
               ? 'text-lg font-bold tracking-tight'
-              : 'text-sm text-grey-600'
+              : 'text-grey-600 text-sm'
           }
         `}
     >
@@ -52,7 +52,7 @@ export default function Text({ content, contentType }: TextProps) {
     <p
       className={classNames(
         { 'text-lg font-bold tracking-tight': contentType === 'title' },
-        { 'text-sm text-grey-600': contentType === 'description' },
+        { 'text-grey-600 text-sm': contentType === 'description' },
       )}
     >
       {content}

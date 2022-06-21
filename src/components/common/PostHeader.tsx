@@ -10,7 +10,6 @@ interface PostHeaderProps {
 export default function PostHeader({
   title,
   date,
-
   gatsbyImageData,
 }: PostHeaderProps) {
   return (

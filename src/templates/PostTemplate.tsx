@@ -1,17 +1,18 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { PostTemplateData, PostPageContextData } from 'types';
-import Bio from 'containers/Bio';
-import Utterances from 'containers/Utterances';
 import Seo from 'containers/Seo';
+import Bio from 'containers/Bio';
+import Share from 'containers/Share';
+import Utterances from 'containers/Utterances';
 import Layout from 'components/layouts/Layout';
+import TableOfContents from 'components/common/TableOfContents';
 import {
   PostHeader,
   PostBody,
   PostFooter,
   PostNavigation,
 } from 'components/common';
-import TableOfContents from 'components/common/TableOfContents';
 
 interface PostTemplateProps {
   data: {
@@ -55,6 +56,7 @@ export default function PostTemplate({
       <TableOfContents headings={headings} />
       <PostBody html={html} />
       <PostFooter tags={tags} />
+      <Share slug={slug} />
       <Bio />
       <PostNavigation previous={previous} next={next} />
       <Utterances />

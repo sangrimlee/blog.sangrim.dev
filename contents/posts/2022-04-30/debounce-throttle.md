@@ -122,10 +122,6 @@ callback의 수는 보통 1초에 60회지만, 일반적으로 대부분의 브�
 - 배터리를 절약할 수 있다. (특히, 모바일 환경)
 - 프레임 유실이 발생할 수 있다.
 
-## 예시로 사용된 Event Animation
-
-https://stackblitz.com/edit/js-ir2x4v
-
 ## 참조
 
 - [lodash/debounce](https://github.com/lodash/lodash/blob/master/debounce.js)

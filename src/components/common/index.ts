@@ -11,3 +11,4 @@ export { default as PostNavigation } from './PostNavigation';
 export { default as Tag } from './Tag';
 export { default as TagBadgeList } from './TagBadgeList';
 export { default as ThemeSwitch } from './ThemeSwitch';
+export { default as ShareButton } from './ShareButton';
