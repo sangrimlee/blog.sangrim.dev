@@ -6,8 +6,11 @@ import Seo from 'containers/Seo';
 export default function AboutPage() {
   return (
     <Layout>
-      <Seo title="소개" slug="/about" />
       <About />
     </Layout>
   );
 }
+
+export const Head = () => {
+  return <Seo title="소개" slug="/about" />;
+};
