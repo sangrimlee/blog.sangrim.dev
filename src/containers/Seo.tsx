@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import useConfigQuery from 'hooks/useConfigQuery';
 import useProfileQuery from 'hooks/useProfileQuery';
 import useSiteMetadataQuery from 'hooks/useSiteMetadataQuery';
@@ -11,11 +10,6 @@ interface SeoProps {
   description?: string;
   keywords?: string[];
   image?: string;
-  lang?: string;
-  meta?: React.DetailedHTMLProps<
-    React.MetaHTMLAttributes<HTMLMetaElement>,
-    HTMLMetaElement
-  >[];
 }
 
 export default function Seo({
@@ -25,8 +19,6 @@ export default function Seo({
   image,
   slug = '/',
   type = 'website',
-  lang = 'ko',
-  meta = [],
 }: SeoProps) {
   const siteMetadata = useSiteMetadataQuery();
   const { facebookAppId, twitterId } = useConfigQuery();
@@ -38,30 +30,27 @@ export default function Seo({
   const metaImage = siteMetadata.siteUrl + (image ?? profileImage.publicURL);
 
   return (
-    <Helmet
-      htmlAttributes={{ lang }}
-      title={title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
-      meta={[
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-        { httpEquiv: 'Content-Type', content: 'text/html; charset=UTF-8' },
-        { name: 'description', content: metaDescription },
-        { name: 'keywords', content: metaKeywords.join(',') },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: metaDescription },
-        { property: 'og:type', content: type },
-        { property: 'og:url', content: metaURL },
-        { property: 'og:image', content: metaImage },
-        { property: 'fb:app_id', content: facebookAppId },
-        { property: 'twitter:card', content: 'summary_large_image' },
-        { property: 'twitter:site', content: twitterId },
-        { property: 'twitter:creator', content: twitterId },
-        { property: 'twitter:title', content: title },
-        { property: 'twitter:description', content: metaDescription },
-        { property: 'twitter:url', content: metaURL },
-        { property: 'twitter:image', content: metaImage },
-        ...meta,
-      ]}
-    />
+    <>
+      <title>
+        {title} | {siteMetadata.title}
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={metaKeywords.join(',')} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content={type} />
+      <meta property="og:url" content={metaURL} />
+      <meta property="og:image" content={metaImage} />
+      <meta property="fb:app_id" content={facebookAppId} />
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:site" content={twitterId} />
+      <meta property="twitter:creator" content={twitterId} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={metaDescription} />
+      <meta property="twitter:url" content={metaURL} />
+      <meta property="twitter:image" content={metaImage} />
+    </>
   );
 }
