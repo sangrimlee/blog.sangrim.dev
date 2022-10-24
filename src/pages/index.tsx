@@ -7,9 +7,12 @@ import Seo from 'containers/Seo';
 export default function IndexPage() {
   return (
     <Layout size="md">
-      <Seo title="홈" />
       <Bio />
       <RecentPostList />
     </Layout>
   );
 }
+
+export const Head = () => {
+  return <Seo title="홈" />;
+};

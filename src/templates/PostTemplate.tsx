@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, HeadProps } from 'gatsby';
 import { PostTemplateData, PostPageContextData } from 'types';
 import Seo from 'containers/Seo';
 import Bio from 'containers/Bio';
@@ -32,11 +32,9 @@ export default function PostTemplate({
     frontmatter: {
       title,
       date,
-      description,
       tags,
       thumbnail: {
         childImageSharp: { gatsbyImageData },
-        publicURL,
       },
     },
   } = postTemplate;
@@ -44,14 +42,6 @@ export default function PostTemplate({
 
   return (
     <Layout size="md">
-      <Seo
-        type="article"
-        title={title}
-        description={description}
-        slug={slug}
-        keywords={tags}
-        image={publicURL}
-      />
       <PostHeader title={title} date={date} gatsbyImageData={gatsbyImageData} />
       <TableOfContents headings={headings} />
       <PostBody html={html} />
@@ -63,6 +53,33 @@ export default function PostTemplate({
     </Layout>
   );
 }
+
+export const Head = ({
+  data: { postTemplate },
+}: HeadProps<{
+  postTemplate: PostTemplateData;
+}>) => {
+  const {
+    fields: { slug },
+    frontmatter: {
+      title,
+      tags,
+      description,
+      thumbnail: { publicURL },
+    },
+  } = postTemplate;
+
+  return (
+    <Seo
+      type="article"
+      title={title}
+      description={description}
+      slug={slug}
+      keywords={tags}
+      image={publicURL}
+    />
+  );
+};
 
 export const queryPostBySlug = graphql`
   query queryPostBySlug($slug: String) {

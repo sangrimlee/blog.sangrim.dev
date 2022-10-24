@@ -1,4 +1,5 @@
 import React from 'react';
+import type { HeadProps } from 'gatsby';
 import Layout from 'components/layouts/Layout';
 import InfinitePostList from 'containers/InfinitePostList';
 import Seo from 'containers/Seo';
@@ -16,7 +17,6 @@ export default function PostByTagTemplate({
 
   return (
     <Layout size="md">
-      <Seo title={`#${tag}`} slug={`/tags/${tag}`} />
       <h1 className="title">
         Tag / <span className="highlight">#{tag}</span>
       </h1>
@@ -24,3 +24,9 @@ export default function PostByTagTemplate({
     </Layout>
   );
 }
+
+export const Head = ({
+  pageContext: { tag },
+}: HeadProps<object, { tag: string }>) => {
+  return <Seo title={`#${tag}`} slug={`/tags/${tag}`} />;
+};

@@ -6,8 +6,11 @@ import Seo from 'containers/Seo';
 export default function TagsPage() {
   return (
     <Layout>
-      <Seo title="태그" slug="/tags" />
       <TagList />
     </Layout>
   );
 }
+
+export const Head = () => {
+  return <Seo title="태그" slug="/tags" />;
+};
