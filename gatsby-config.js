@@ -9,7 +9,6 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-transformer-sharp',
     'gatsby-transformer-yaml',
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typescript',
       options: {
