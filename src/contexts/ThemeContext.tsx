@@ -27,21 +27,20 @@ export const ThemeContext = createContext(defaultState);
 
 export const useThemeContext = () => useContext(ThemeContext);
 
+const getDefaultTheme = () => getThemeStorage() || getOSTheme();
+
 export default function ThemeProvider({ children }: Props) {
-  const [theme, setTheme] = useState<Theme>(getThemeStorage() ?? getOSTheme());
+  const [theme, setTheme] = useState<Theme>(getDefaultTheme());
 
   const toggleTheme = useCallback(() => {
     const toggledTheme = theme === 'light' ? 'dark' : 'light';
     localStorage.setItem('theme', toggledTheme);
-    addThemeClass(toggledTheme);
     setTheme(toggledTheme);
   }, [theme]);
 
   useEffect(() => {
-    const defaultTheme = getThemeStorage() ?? getOSTheme();
-    addThemeClass(defaultTheme);
-    setTheme(defaultTheme);
-  }, []);
+    addThemeClass(theme);
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
